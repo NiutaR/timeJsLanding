@@ -38,16 +38,23 @@ function setBgGreet() {
         hour = today.getHours();
     if (hour < 12) {
         //morning
-        document.body.style.backgroundImage = "url('../img/morning.jpg')";
+        document.body.style.backgroundImage = "url('//images.unsplash.com/photo-1491929007750-dce8ba76e610?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundRepeat = "no-repeat";
         greeting.textContent = "Good Morning";
 
     } else if (hour < 18) {
         //afternoon
-        document.body.style.backgroundImage = "url('../img/afternoon.jpg')";
+        document.body.style.backgroundImage = "url('//images.unsplash.com/photo-1471286274405-579f8d7132d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";
+        
         greeting.textContent = "Good Afternoon";
     } else {
         //evening
-        document.body.style.backgroundImage = "url('../img/evening.jpg')";
+        document.body.style.backgroundImage = "url('//images.unsplash.com/photo-1556300936-2d1a21a92ea1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";
         greeting.textContent = "Good Evening";
         document.body.style.color = 'white';
     }
@@ -101,3 +108,4 @@ showTime();
 setBgGreet();
 getName();
 getFocus();
+

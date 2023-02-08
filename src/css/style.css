@@ -29,3 +29,9 @@ h2 {
         font-size: 6rem;
     }
 }
+@media(max-width: 500px) {
+    #time {
+        font-size: 3.5rem;
+    }
+    
+}
